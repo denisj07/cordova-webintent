@@ -33,6 +33,14 @@
         }, 'WebIntent', 'hasExtra', [params]);
     };
 
+    WebIntent.prototype.getAction = function(success, fail) {
+        return cordova.exec(function(args) {
+            success(args);
+        }, function(args) {
+            fail(args);
+        }, 'WebIntent', 'getAction', []);
+    };
+
     WebIntent.prototype.getUri = function(success, fail) {
         return cordova.exec(function(args) {
             success(args);
