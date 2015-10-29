@@ -3,7 +3,19 @@ package com.borismus.webintent;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.sun.jndi.toolkit.url.Uri;
+import org.apache.cordova.CordovaActivity;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.text.Html;
+
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CordovaResourceApi;
+import org.apache.cordova.PluginResult;
 
 /**
  * WebIntent is a PhoneGap plugin that bridges Android intents and web
